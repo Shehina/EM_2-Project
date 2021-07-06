@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Contacts</title>
+<link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+  <div align="center" class="contacts-container">
+    <br>
+    <p id="header">My Contacts</p>
+    <br>
+    <br>
+    <div class="contact">
+    <form action="/" method="POST" class="contact-header">
+    <input id="input" type="text" name="content" placeholder="Add a contact...">
+    <button type="submit"><span class="fas fa-plus"></span></button>
+    </form>
+    </div>
+    <br>
+    <br>
+    <ul class="contact-list">
+      <% contactsToAdd.forEach(details => { %>
+      <li class="contact-list-item">
+      <div class="contact-list-item-name"><%= details.content %></div>
+      <a href="/edit/<%= details._id %>" class="edit">
+        <span class="fas fa-edit"></span>
+        </a>
+        <a href="/remove/<%= details._id %>" class="remove">
+        <span class="fas fa-times"></span>
+        </a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>       
+</body>
+</html>

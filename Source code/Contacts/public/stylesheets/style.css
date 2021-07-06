@@ -1,0 +1,154 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  padding-top: 30px;
+  background: #8bcce6;
+  font-family: sans-serif;
+  color: black;
+}
+
+#header {
+  font-size: 80px;
+  width: 500px;
+  text-align: center;
+  color: white;
+  font-family: akronim;
+}
+
+#input {
+  width: 380px;
+  height:35px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#back {
+  font-size: 20px;
+  color: white;
+}
+
+.contact-container {
+  color: rgb(83, 81, 81);
+  position: absolute;
+  top:50%;
+  left: 50%;
+  padding: 20px;
+  width: 600px;
+  transform: translate(-50%,-50%);
+  background:  rgb(54, 150, 214);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  width: 420px;
+}
+  
+.contact-container h2 {
+  padding: 10px;
+  font-family:  sans-serif;
+  font-size: 2em;
+}
+  
+.contact-header input {
+  width: 90%;
+  border: 3px;
+  border-radius: 5px;
+  height: 35px;
+  font-family: sans-serif;
+}
+   
+.contact-header button {
+  color:  rgb(9, 74, 117);
+  border: none;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  background-color:  rgb(227, 234, 240);
+}
+    
+.contact-container ul {
+  list-style: none;
+}
+
+.contact-list-item {
+  padding: 10px;
+  margin-top: 10px;
+  border: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+    
+.contact-list-item form {
+  width: 100%;
+  display: flex;
+}
+
+.contact-list-item input {
+  flex-grow: 2;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+    
+.contact-list-item button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-family: sans-serif;
+  background-color: rgb(37, 212, 243);
+  font-size: 15px;
+}
+
+.contact-list-item .cancel {
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-family:  sans-serif;
+  background-color: rgb(37, 212, 243);
+  margin-left: 5px;
+}
+
+    
+.contact-list-item div {
+  flex-grow: 2;
+}
+
+    
+.contact-list-item .edit {
+  color : rgb(37, 212, 243);
+  margin-right: 10px;
+  cursor:pointer;
+  text-decoration: none;
+}
+
+    
+.contact-list-item .remove {
+  color : rgb(54, 150, 214);
+  margin-right: 5px;
+  cursor:pointer;
+  text-decoration: none;
+}
+
+
